@@ -1,0 +1,110 @@
+.btn-info {
+    background-color: #0d47a1 !important;
+}
+
+// --- input
+.form-grid-2 {
+    display: flex;
+    width: 100%;
+    padding: 20px 0px;
+}
+
+.inp {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    max-width: 400px;
+}
+
+.inp .label {
+    position: absolute;
+    font-family: 'Noto Sans KR', sans-serif;
+    top: 16px;
+    left: 0;
+    font-size: 16px;
+    color: #9098a9;
+    font-weight: 500;
+    transform-origin: 0 0;
+    transition: all 0.2s ease;
+}
+
+.inp .border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: #07f;
+    transform: scaleX(0);
+    transform-origin: 0 0;
+    transition: all 0.15s ease;
+}
+
+.inp input {
+    -webkit-appearance: none;
+    width: 100%;
+    border: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    padding: 12px 0;
+    height: 48px;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 2px solid #c8ccd4;
+    border-radius: 0;
+    color: #223254;
+    transition: all 0.15s ease;
+    padding: 10px;
+}
+
+.inp input:hover {
+    background: rgba(34, 50, 84, 0.03);
+}
+
+.inp input:not(:invalid)+span {
+    color: #5a667f;
+    transform: translateY(-26px) scale(0.75);
+}
+
+.inp input:focus {
+    background: none;
+    outline: none;
+}
+
+.inp input:focus+span {
+    color: #07f;
+    transform: translateY(-26px) scale(0.75);
+}
+
+.inp input:focus+span+.border {
+    transform: scaleX(1);
+}
+
+.disabled {
+    background: lavenderblush;
+}
+
+.grid-solo {
+    padding: 20px 10px;
+    display: unset !important;
+}
+
+.mt-5 {
+    margin-top: 5rem;
+}
+
+.col-content {
+    padding: 20px 10px;
+    font-size: 16px;
+    color: #000000;
+    font-weight: 400;
+}
+
+.bold {
+    font-weight: 500;
+}
+
+// --- /input
+.login-failed-modal {
+    top: 20%;
+    position: absolute;
+}
