@@ -11,6 +11,8 @@ import { SharedModule } from '../shared/shared.module';
 
 import { FooterComponent } from '../main-layout/footer/footer.component';
 import { LoginComponent } from './login/login.component';
+import { FilterPipeModule } from 'ngx-filter-pipe';
+
 import { NoticeComponent } from './notice/notice.component';
 import { CustomersComponent } from './customers/customers.component';
 import { NoticeDetailComponent } from './notice/notice-detail/notice-detail.component';
@@ -18,6 +20,7 @@ import { CustomersDetailComponent } from './customers/customers-detail/customers
 
 @NgModule({
     imports: [
+    FilterPipeModule,
     CommonModule,
     RouterModule,
     FormsModule,
